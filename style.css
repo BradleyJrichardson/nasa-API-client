@@ -1,0 +1,23 @@
+body {
+  background: black;
+}
+
+#wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+}
+
+img {
+  height: 600px;
+  width: auto;
+  padding: 50px;
+}
