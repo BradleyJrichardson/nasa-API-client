@@ -5,12 +5,14 @@ const fetchData = () => {
     "https://api.nasa.gov/planetary/apod?api_key=weZmTi0jazYX7Ovr30EGH0qJbBwqiXMeUcshXJay"
   )
     .then(response => {
-      console.log(response);
       return response.json();
     })
     .then(json => {
-      console.log(json);
       let image = document.createElement("img");
+      // let image2 = document.querySelector("#image2");
+      // console.log(image2);
+      // image2.src = json.url;
+
       let copyright = document.createElement("p");
       let date = document.createElement("p");
       let explanation = document.createElement("p");
