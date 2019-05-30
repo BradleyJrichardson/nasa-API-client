@@ -9,9 +9,6 @@ const fetchData = () => {
     })
     .then(json => {
       let image = document.createElement("img");
-      // let image2 = document.querySelector("#image2");
-      // console.log(image2);
-      // image2.src = json.url;
 
       let copyright = document.createElement("p");
       let date = document.createElement("p");

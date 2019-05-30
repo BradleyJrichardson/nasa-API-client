@@ -35,11 +35,20 @@ img {
 #nasa-logo {
   height: 400px;
   width: auto;
-}
-
-.shadowed {
+  transition: 0.4s;
   -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.4));
   filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='12' dy='12' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.5)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  transition: all 3s ease-out;
+}
+
+#nasa-logo:hover,
+#nasa-logo:focus {
+  height: 400px;
+  width: auto;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+  filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='1' dy='1' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.1)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1, Color='#444')";
 }
